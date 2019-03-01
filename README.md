@@ -53,7 +53,7 @@ We would love you for the contribution to VSAlertModalStatus, check the ``LICENS
 
 ## Meta
 
-Vioside – [@YourTwitter](https://twitter.com/vioside) 
+Vioside – [@Vioside](https://twitter.com/vioside) 
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
