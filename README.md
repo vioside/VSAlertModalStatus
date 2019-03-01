@@ -18,8 +18,8 @@ VSAlertModalStatus allows you to show alerts containing in image, title, and sub
 
 ## Requirements
 
-- iOS 8.0+
-- Xcode 7.3
+- iOS 11.0+
+- Xcode 10.0
 
 ## Installation
 
@@ -49,15 +49,15 @@ VSModalStatusView.displayAlertStatusIn(controller: self,
 
 ## Contribute
 
-We would love you for the contribution to **YourLibraryName**, check the ``LICENSE`` file for more info.
+We would love you for the contribution to VSAlertModalStatus, check the ``LICENSE`` file for more info.
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Vioside – [@YourTwitter](https://twitter.com/vioside) 
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/vioside/VSAlertModalStatus](https://github.com/vioside/VSAlertModalStatus)
 
 [swift-image]:https://img.shields.io/badge/swift-4.0-green.svg
 [swift-url]: https://swift.org/
