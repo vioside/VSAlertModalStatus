@@ -27,7 +27,7 @@ VSAlertModalStatus allows you to show alerts containing in image, title, and sub
 You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
 
 ```ruby
-pod 'VSAlertModalStatus', :git => 'https://github.com/vioside/VSAlertModalStatus', :tag => '0.0.1'
+pod 'VSAlertModalStatus', :git => 'https://github.com/vioside/VSAlertModalStatus', :tag => '0.0.3'
 ```
 
 To get the full benefits import `YourLibrary` wherever you import UIKit
@@ -44,7 +44,8 @@ import VSAlertModalStatus
 VSModalStatusView.displayAlertStatusIn(controller: self,
                                                image: UIImage(named: "test")!,
                                                title: "Static",
-                                               subtitle: "")
+                                               subtitle: "",
+                                               duration: 0.10)
 ```
 
 ## Contribute

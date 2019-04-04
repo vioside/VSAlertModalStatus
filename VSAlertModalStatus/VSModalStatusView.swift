@@ -19,6 +19,7 @@ public class VSModalStatusView: UIView {
     let nibName = "VSModalStatusView"
     var contentView: UIView!
     var timer = Timer()
+    var duration:TimeInterval = 0.10
     
     //MARK: - Set Up View
     public override init(frame: CGRect) {
@@ -61,9 +62,13 @@ public class VSModalStatusView: UIView {
         }
     }
     
-    public static func displayAlertStatusIn(controller:UIViewController, image:UIImage, title:String, subtitle:String){
+    public static func displayAlertStatusIn(controller:UIViewController, image:UIImage, title:String, subtitle:String, duration:TimeInterval?){
         
         let view = VSModalStatusView(frame: controller.view.frame)
+        
+        if let d = duration{
+            view.duration = d
+        }
         
         view.titleLabel.text = title
         view.subtitleLabel.text = subtitle
@@ -78,7 +83,7 @@ public class VSModalStatusView: UIView {
         // Then add a timer to remove the view
         self.contentView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         
-        UIView.animate(withDuration: 0.15, animations: {
+        UIView.animate(withDuration: duration, animations: {
             self.contentView.alpha = 1.0
             self.contentView.transform = CGAffineTransform.identity
         }) { (success) in
@@ -94,7 +99,7 @@ public class VSModalStatusView: UIView {
     @objc private func removeSelf() {
         // Animate removal of view
         UIView.animate(
-            withDuration: 0.15,
+            withDuration: duration,
             animations: {
                 self.contentView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
                 self.contentView.alpha = 0.0
